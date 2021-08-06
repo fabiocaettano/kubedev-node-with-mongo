@@ -5,5 +5,5 @@ const DataSchema = new mongoose.Schema({
     senha: String
 })
 
-const usuario = mongoose.model("Usuario", DataSchuema)
+const usuario = mongoose.model("Usuario", DataSchema)
 module.exports = usuario;
