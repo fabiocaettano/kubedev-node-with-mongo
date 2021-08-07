@@ -2,13 +2,15 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const path = require('path')
-const mongoose = require('mongoose')
 
 const routes = require('./src/routes')
 
 const app = express()
 
-mongoose.connect('mongodb://127.0.0.1:27017/DBTest1',{
+
+const mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost:27017/DBTest',{
     useUnifiedTopology: true,
     useNewUrlParser: true
 },function(err){

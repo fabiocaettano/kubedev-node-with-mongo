@@ -1,0 +1,147 @@
+about to fork child process, waiting until server is ready for connections.
+forked process: 27
+2021-08-07T17:19:17.301+0000 I  CONTROL  [main] ***** SERVER RESTARTED *****
+2021-08-07T17:19:17.555+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2021-08-07T17:19:17.740+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=27 port=27017 dbpath=/data/db 64-bit host=deploy-mongodb-58669dbf8-f9kc4
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] db version v4.2.8
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] git version: 43d25964249164d76d5e04dd6cf38f6111e21f5f
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] modules: none
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] build environment:
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2021-08-07T17:19:17.770+0000 I  CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27017, tls: { mode: "disabled" } }, processManagement: { fork: true, pidFilePath: "/tmp/docker-entrypoint-temp-mongod.pid" }, systemLog: { destination: "file", logAppend: true, path: "/proc/1/fd/1" } }
+2021-08-07T17:19:17.771+0000 I  STORAGE  [initandlisten] 
+2021-08-07T17:19:17.771+0000 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-08-07T17:19:17.771+0000 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-08-07T17:19:17.771+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1410M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2021-08-07T17:19:18.756+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356758:756658][27:0x7f85651a8b00], txn-recover: Set global recovery timestamp: (0, 0)
+2021-08-07T17:19:19.015+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2021-08-07T17:19:19.223+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2021-08-07T17:19:19.377+0000 I  CONTROL  [initandlisten] 
+2021-08-07T17:19:19.377+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-08-07T17:19:19.377+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-08-07T17:19:19.377+0000 I  CONTROL  [initandlisten] 
+2021-08-07T17:19:19.389+0000 I  CONTROL  [initandlisten] 
+2021-08-07T17:19:19.389+0000 I  CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 15151 processes, 65536 files. Number of processes should be at least 32768 : 0.5 times number of files.
+2021-08-07T17:19:19.514+0000 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: ada097c1-26f8-43e8-8781-11717670bf35 and options: { uuid: UUID("ada097c1-26f8-43e8-8781-11717670bf35") }
+2021-08-07T17:19:20.806+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2021-08-07T17:19:20.827+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2021-08-07T17:19:20.827+0000 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2021-08-07T17:19:20.827+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2021-08-07T17:19:20.967+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2021-08-07T17:19:21.046+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2021-08-07T17:19:21.091+0000 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 5f450a8f-3892-45b5-a10d-13be240e46e1 and options: { capped: true, size: 10485760 }
+2021-08-07T17:19:21.426+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2021-08-07T17:19:21.426+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2021-08-07T17:19:21.444+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-08-07T17:19:21.538+0000 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2021-08-07T17:19:21.539+0000 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2021-08-07T17:19:21.539+0000 I  NETWORK  [listener] Listening on 127.0.0.1
+2021-08-07T17:19:21.539+0000 I  NETWORK  [listener] waiting for connections on port 27017
+child process started successfully, parent exiting
+2021-08-07T17:19:21.654+0000 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 ok:0 errMsg:"ns does not exist: config.system.sessions" errName:NamespaceNotFound errCode:26 reslen:134 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_msg 115ms
+2021-08-07T17:19:21.654+0000 I  COMMAND  [LogicalSessionCacheReap] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 ok:0 errMsg:"ns does not exist: config.system.sessions" errName:NamespaceNotFound errCode:26 reslen:134 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_msg 115ms
+2021-08-07T17:19:21.721+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2021-08-07T17:19:21.806+0000 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 7d1a0449-7297-4cbe-a986-a61bbdd47f92 and options: { uuid: UUID("7d1a0449-7297-4cbe-a986-a61bbdd47f92") }
+2021-08-07T17:19:22.001+0000 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2021-08-07T17:19:22.526+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2021-08-07T17:19:23.260+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2021-08-07T17:19:23.260+0000 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 200 megabytes of RAM
+2021-08-07T17:19:23.260+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2021-08-07T17:19:23.261+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2021-08-07T17:19:23.632+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2021-08-07T17:19:23.806+0000 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 4, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 3 } storage:{} protocol:op_msg 2046ms
+2021-08-07T17:19:31.174+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:52336 #1 (1 connection now open)
+2021-08-07T17:19:31.236+0000 I  NETWORK  [conn1] received client metadata from 127.0.0.1:52336 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2021-08-07T17:19:31.269+0000 I  NETWORK  [conn1] end connection 127.0.0.1:52336 (0 connections now open)
+2021-08-07T17:19:34.066+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:52346 #2 (1 connection now open)
+2021-08-07T17:19:34.066+0000 I  NETWORK  [conn2] received client metadata from 127.0.0.1:52346 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2021-08-07T17:19:34.673+0000 I  SHARDING [conn2] Marking collection admin.system.users as collection version: <unsharded>
+2021-08-07T17:19:34.673+0000 I  STORAGE  [conn2] createCollection: admin.system.users with generated UUID: 18acd3ac-83b4-4c9d-af1a-604803df72e0 and options: {}
+2021-08-07T17:19:34.927+0000 I  INDEX    [conn2] index build: done building index _id_ on ns admin.system.users
+2021-08-07T17:19:35.053+0000 I  INDEX    [conn2] index build: done building index user_1_db_1 on ns admin.system.users
+2021-08-07T17:19:35.054+0000 I  COMMAND  [conn2] command admin.system.users appName: "MongoDB Shell" command: insert { insert: "system.users", bypassDocumentValidation: false, ordered: true, $db: "admin" } ninserted:1 keysInserted:2 numYields:0 reslen:45 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 3 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { w: 3 } }, Database: { acquireCount: { W: 3 } }, Collection: { acquireCount: { r: 2, w: 2, W: 1 } }, Mutex: { acquireCount: { r: 5 } } } flowControl:{ acquireCount: 4, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 400ms
+2021-08-07T17:19:35.054+0000 I  COMMAND  [conn2] command admin.system.version appName: "MongoDB Shell" command: createUser { createUser: "mongouser", pwd: "xxx", roles: [ { role: "root", db: "admin" } ], digestPassword: true, writeConcern: { w: "majority", wtimeout: 600000.0 }, lsid: { id: UUID("71e97069-6f33-45b8-8623-3b51115fa65b") }, $db: "admin" } numYields:0 reslen:38 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 5 } }, ReplicationStateTransition: { acquireCount: { w: 6 } }, Global: { acquireCount: { r: 2, w: 4 } }, Database: { acquireCount: { r: 1, W: 4 } }, Collection: { acquireCount: { r: 3, w: 3, W: 1 } }, Mutex: { acquireCount: { r: 8 } } } flowControl:{ acquireCount: 4, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 848ms
+Successfully added user: {
+	"user" : "mongouser",
+	"roles" : [
+		{
+			"role" : "root",
+			"db" : "admin"
+		}
+	]
+}
+2021-08-07T17:19:35.055+0000 E  -        [main] Error saving history file: FileOpenFailed: Unable to open() file /home/mongodb/.dbshell: No such file or directory
+2021-08-07T17:19:35.074+0000 I  NETWORK  [conn2] end connection 127.0.0.1:52346 (0 connections now open)
+
+/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+
+2021-08-07T17:19:35.307+0000 I  CONTROL  [main] ***** SERVER RESTARTED *****
+2021-08-07T17:19:35.307+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2021-08-07T17:19:35.312+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+killing process with pid: 27
+2021-08-07T17:19:35.344+0000 I  CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-08-07T17:19:35.344+0000 I  NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-08-07T17:19:35.344+0000 I  NETWORK  [listener] removing socket file: /tmp/mongodb-27017.sock
+2021-08-07T17:19:35.344+0000 I  -        [signalProcessingThread] Stopping further Flow Control ticket acquisitions.
+2021-08-07T17:19:35.344+0000 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2021-08-07T17:19:35.345+0000 I  FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-08-07T17:19:35.347+0000 I  STORAGE  [signalProcessingThread] Deregistering all the collections
+2021-08-07T17:19:35.347+0000 I  STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+2021-08-07T17:19:35.347+0000 I  STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-08-07T17:19:35.382+0000 I  STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2021-08-07T17:19:35.382+0000 I  STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2021-08-07T17:19:35.383+0000 I  STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+2021-08-07T17:19:35.482+0000 I  STORAGE  [signalProcessingThread] Finished shutting down journal flusher thread
+2021-08-07T17:19:35.482+0000 I  STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+2021-08-07T17:19:35.482+0000 I  STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+2021-08-07T17:19:36.356+0000 I  STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-08-07T17:19:36.357+0000 I  CONTROL  [signalProcessingThread] now exiting
+2021-08-07T17:19:36.357+0000 I  CONTROL  [signalProcessingThread] shutting down with code:0
+
+MongoDB init process complete; ready for start up.
+
+2021-08-07T17:19:37.404+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2021-08-07T17:19:37.408+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=deploy-mongodb-58669dbf8-f9kc4
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] db version v4.2.8
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] git version: 43d25964249164d76d5e04dd6cf38f6111e21f5f
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] modules: none
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] build environment:
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2021-08-07T17:19:37.413+0000 I  CONTROL  [initandlisten] options: { net: { bindIp: "*" }, security: { authorization: "enabled" } }
+2021-08-07T17:19:37.417+0000 I  STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-08-07T17:19:37.417+0000 I  STORAGE  [initandlisten] 
+2021-08-07T17:19:37.417+0000 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-08-07T17:19:37.417+0000 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-08-07T17:19:37.417+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1410M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2021-08-07T17:19:38.247+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356778:247080][1:0x7faf1fff0b00], txn-recover: Recovering log 1 through 2
+2021-08-07T17:19:38.401+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356778:401176][1:0x7faf1fff0b00], txn-recover: Recovering log 2 through 2
+2021-08-07T17:19:38.798+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356778:798474][1:0x7faf1fff0b00], txn-recover: Main recovery loop: starting at 1/29184 to 2/256
+2021-08-07T17:19:39.205+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356779:205049][1:0x7faf1fff0b00], txn-recover: Recovering log 1 through 2
+2021-08-07T17:19:39.397+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356779:397600][1:0x7faf1fff0b00], txn-recover: Recovering log 2 through 2
+2021-08-07T17:19:39.469+0000 I  STORAGE  [initandlisten] WiredTiger message [1628356779:469180][1:0x7faf1fff0b00], txn-recover: Set global recovery timestamp: (0, 0)
+2021-08-07T17:19:41.039+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2021-08-07T17:19:41.152+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2021-08-07T17:19:41.317+0000 I  CONTROL  [initandlisten] 
+2021-08-07T17:19:41.317+0000 I  CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 15151 processes, 65536 files. Number of processes should be at least 32768 : 0.5 times number of files.
+2021-08-07T17:19:41.900+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2021-08-07T17:19:42.127+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2021-08-07T17:19:42.127+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2021-08-07T17:19:42.127+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2021-08-07T17:19:42.296+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2021-08-07T17:19:42.297+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-08-07T17:19:42.435+0000 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2021-08-07T17:19:42.435+0000 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2021-08-07T17:19:42.435+0000 I  NETWORK  [listener] Listening on 0.0.0.0
+2021-08-07T17:19:42.436+0000 I  NETWORK  [listener] waiting for connections on port 27017
+2021-08-07T17:19:42.436+0000 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2021-08-07T17:19:43.000+0000 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
