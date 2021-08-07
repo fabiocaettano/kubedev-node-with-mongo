@@ -23,5 +23,12 @@ module.exports = {
 
         res.json(usuarios)
 
+    },
+
+    async detail(req,res){
+        
+        const {_id} = req.params
+        const usuarios = await Usuario.findOne({_id});
+        res.json(usuarios);
     }
 }
