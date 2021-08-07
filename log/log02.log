@@ -1,0 +1,34 @@
+
+> api@1.0.0 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+Servidor iniciado com sucesso.
+MongoDb Conectado com Sucesso
+/app/node_modules/mongodb/lib/cmap/connection.js:272
+          callback(new MongoError(document));
+                   ^
+
+MongoError: command find requires authentication
+    at MessageStream.messageHandler (/app/node_modules/mongodb/lib/cmap/connection.js:272:20)
+    at MessageStream.emit (node:events:394:28)
+    at processIncomingData (/app/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/app/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at Socket.ondata (node:internal/streams/readable:749:22)
+    at Socket.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at Socket.Readable.push (node:internal/streams/readable:226:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  ok: 0,
+  code: 13,
+  codeName: 'Unauthorized'
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

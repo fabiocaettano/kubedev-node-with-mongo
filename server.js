@@ -10,9 +10,14 @@ const app = express()
 
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/DBTest',{
+mongoose.connect('mongodb://10.1.90.167:27017/admin',{
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    auth:{
+        user : "mongouser",
+        password : "mongopwd"
+
+    }
 },function(err){
     if(err){
         console.log("Erro na Conexão")
