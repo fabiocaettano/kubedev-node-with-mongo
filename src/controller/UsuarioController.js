@@ -8,7 +8,6 @@ module.exports = {
     
         res.json(usuarios)
     },
-
     async store(req,res){
 
         const { nome, senha} = req.body;
@@ -24,11 +23,22 @@ module.exports = {
         res.json(usuarios)
 
     },
-
     async detail(req,res){
         
         const {_id} = req.params
+    
         const usuarios = await Usuario.findOne({_id});
-        res.json(usuarios);
+    
+        res.json(usuarios)
+        
+    },
+    async delete(req,res){
+
+        const {_id} = req.params
+        
+        const usuarios = await Usuario.findByIdAndDelete({_id});
+
+        res.json(usuarios)
+
     }
 }
