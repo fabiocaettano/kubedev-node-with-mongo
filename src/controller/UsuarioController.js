@@ -40,5 +40,20 @@ module.exports = {
 
         res.json(usuarios)
 
+    },
+    async update(req,res){
+
+        const { _id, nome, senha } = req.body;
+
+        let dataCreate = {}
+
+        dataCreate = {
+            nome, senha
+        }
+
+        const usuarios = await Usuario.findByIdAndUpdate({_id}, dataCreate, {new: true});
+
+        res.json(usuarios)
+
     }
 }
