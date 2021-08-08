@@ -10,7 +10,7 @@ const app = express()
 
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://10.1.90.167:27017/admin',{
+mongoose.connect('mongodb://10.1.90.173:27017/admin',{
     useUnifiedTopology: true,
     useNewUrlParser: true,
     auth:{

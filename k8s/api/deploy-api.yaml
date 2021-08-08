@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploy-api
+  namespace: fabio-api
 spec:
   selector:
     matchLabels:
@@ -13,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: fabiocaettano74/api-cadastro-usuario:v8
+          image: fabiocaettano74/api-cadastro-usuario:v10
           ports:
           - containerPort: 3003
             name: http

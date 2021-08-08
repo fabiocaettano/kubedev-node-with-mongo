@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploy-mongodb
+  namespace: fabio-mongo
 spec:
   selector:
     matchLabels:
